@@ -16,10 +16,11 @@ Geolocation data of each bus stops is obtained from Singapore Land Transport Dat
 Other than MapBox-GL, the project uses React, Next.js & Tailwind CSS.
 
 In development mode, a reverse proxy was used to request data to LTA DATAMALL API.
+Reverse proxy is necessary to avoid CORS issue.
 Code for reverse proxy is not included in this repository
 
 ## License
 
-Data by LTA (https://www.mytransport.sg/content/mytransport/home/dataMall.html)
+Data by &copy;LTA (https://www.mytransport.sg/content/mytransport/home/dataMall.html)
 
 Others: MIT License
