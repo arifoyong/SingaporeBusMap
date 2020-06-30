@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import mapboxgl from "mapbox-gl";
 import busStop from "../data/BusStopsAll.json";
-import fetchFakeData from "../helpers/fetchFakeData";
+import generateGeoJsonData from "../helpers/generateGeoJsonData";
 import Popup from "./popup";
 
 mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
@@ -94,7 +94,7 @@ const Map = (props) => {
       // get new center coordinates
       const { lng, lat } = map.getCenter();
       // fetch new data
-      const results = await fetchFakeData();
+      const results = await generateGeoJsonData();
 
       // update "random-points-data" source with new data
       // all layers that consume the "random-points-data" data source will be updated automatically
