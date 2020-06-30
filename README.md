@@ -13,7 +13,7 @@ Geolocation data of each bus stops is obtained from Singapore Land Transport Dat
 
 ## Technologies
 
-Other than MapBox-GL, the project uses React, Next.js & Tailwind CSS.
+Other than MapBox-GL, the project uses Next.js, React Context & Tailwind CSS.
 
 In development mode, a reverse proxy was used to request data to LTA DATAMALL API.
 Reverse proxy is necessary to avoid CORS issue.
