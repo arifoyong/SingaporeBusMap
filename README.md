@@ -7,6 +7,10 @@ User will also be able to look at details at each bus stop:
 2. Available bus services at particular station
 3. Estimated arrival time of each bus service
 
+![Screenshot 01](https://github.com/arifoyong/SingaporeBusMap/blob/master/screenshots/Screenshot_001.png)
+
+![Screenshot 02](https://github.com/arifoyong/SingaporeBusMap/blob/master/screenshots/Screenshot_002.png)
+
 ## Data
 
 Geolocation data of each bus stops is obtained from Singapore Land Transport Data Mall (https://www.mytransport.sg/content/mytransport/home/dataMall.html)
