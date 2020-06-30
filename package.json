@@ -1,0 +1,25 @@
+{
+  "name": "mapbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "mapbox-gl": "^1.11.0",
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.7"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.4.6"
+  }
+}

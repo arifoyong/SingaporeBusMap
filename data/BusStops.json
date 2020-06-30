@@ -1,0 +1,33 @@
+{
+  "odata.metadata": "http://datamall2.mytransport.sg/ltaodataservice/$metadata#BusStops",
+  "value": [
+    {
+      "BusStopCode": "01012",
+      "RoadName": "Victoria St",
+      "Description": "Hotel Grand Pacific",
+      "Latitude": 1.29684825487647,
+      "Longitude": 103.85253591654006
+    },
+    {
+      "BusStopCode": "01013",
+      "RoadName": "Victoria St",
+      "Description": "St. Joseph's Ch",
+      "Latitude": 1.29770970610083,
+      "Longitude": 103.8532247463225
+    },
+    {
+      "BusStopCode": "01019",
+      "RoadName": "Victoria St",
+      "Description": "Bras Basah Cplx",
+      "Latitude": 1.29698951191332,
+      "Longitude": 103.85302201172507
+    },
+    {
+      "BusStopCode": "01029",
+      "RoadName": "Nth Bridge Rd",
+      "Description": "Opp Natl Lib",
+      "Latitude": 1.2966729849642,
+      "Longitude": 103.85441422464267
+    }
+  ]
+}
