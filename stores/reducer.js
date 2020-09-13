@@ -12,6 +12,16 @@ const Reducer = (state, action) => {
         showBusStopDetail: false,
         id: null,
       };
+    case "SHOWSIDEBAR":
+      return {
+        ...state,
+        showSidebar: true,
+      };
+    case "HIDESIDEBAR":
+      return {
+        ...state,
+        showSidebar: false,
+      };
 
     default:
       return state;

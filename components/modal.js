@@ -1,5 +1,6 @@
 import { useState, useContext, useEffect } from "react";
 import { StateContext } from "../stores/store";
+import { addToFavorite } from "../action/favorite";
 // import fetch from "isomorphic-unfetch";
 
 const Modal = ({ closeModal }) => {
@@ -60,6 +61,7 @@ const Modal = ({ closeModal }) => {
           <h3 className="text-gray-700 font-bold text-2xl border-b-1 border-gray-800 mb-2">
             {description}
           </h3>
+
           <button
             className="absolute text-xs text-white top-0 right-0 bg-red-400 px-2"
             onClick={closeModal}
@@ -69,6 +71,15 @@ const Modal = ({ closeModal }) => {
         </div>
 
         {data && displayArriving()}
+
+        <div className="flex justify-end">
+          <button
+            className="px-2 py-1 bg-blue-400 rounded text-white"
+            onClick={() => addToFavorite(state.selected.id, name, description)}
+          >
+            Add to Favorite
+          </button>
+        </div>
       </div>
     </div>
   );

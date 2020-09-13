@@ -3,6 +3,7 @@ import Reducer from "./reducer";
 
 const initialState = {
   showBusStopDetail: false,
+  showSidebar: false,
   conter: 0,
   id: null,
   selected: {},

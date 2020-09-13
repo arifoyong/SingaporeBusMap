@@ -53,14 +53,18 @@ const Map = (props) => {
     // let marker = new mapboxgl.Marker().setLngLat(center).addTo(map);
 
     // Add layer
-    map.on("load", () => {
+    map.on("load", async () => {
       // add the data source for new a feature collection with no features
+
+      const results = await generateGeoJsonData();
+
       map.addSource("random-points-data", {
         type: "geojson",
         data: {
           type: "FeatureCollection",
           features: [],
         },
+        data: results,
       });
       // now add the layer, and reference the data source above by name
       map.addLayer({
@@ -73,7 +77,7 @@ const Map = (props) => {
             "interpolate",
             ["linear"],
             ["zoom"],
-            12,
+            13,
             ["*", 0, 1],
             15,
             ["*", 1, 1],
@@ -94,11 +98,11 @@ const Map = (props) => {
       // get new center coordinates
       const { lng, lat } = map.getCenter();
       // fetch new data
-      const results = await generateGeoJsonData();
+      // const results = await generateGeoJsonData();
 
       // update "random-points-data" source with new data
       // all layers that consume the "random-points-data" data source will be updated automatically
-      map.getSource("random-points-data").setData(results);
+      // map.getSource("random-points-data").setData(results);
     });
 
     map.on("click", () => props.hideModal());
